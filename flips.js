@@ -7,6 +7,10 @@ import minimist from 'minimist';
 var argv = minimist(process.argv.slice(2));
 var number = argv['number']
 console.log(number);
+
+if (!number) {
+    number = 1;
+}
 // Call the coinFlip function and put the return into STDOUT
 let STDOUT = coinFlips(number);
 let second = countFlips(STDOUT);

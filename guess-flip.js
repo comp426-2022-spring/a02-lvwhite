@@ -8,8 +8,7 @@ var call = argv['call'];
 
 if ((call != 'heads' && call != 'tails') || !call) {
   console.log("Error: invalid input")
+} else {
+    let STDOUT = flipACoin(call);
+    console.log(STDOUT);
 }
-
-// Call the coinFlip function and put the return into STDOUT
-let STDOUT = flipACoin(call);
-console.log(STDOUT);
